@@ -13,6 +13,7 @@ comm_base::comm_base(void)
 comm_base::~comm_base(void)
 {
 }
+
 //是否为十六进制字符
 static int is_ascii_hex(unsigned char data)
 {
@@ -22,6 +23,7 @@ static int is_ascii_hex(unsigned char data)
 
     return -1;
 }
+
 //是否为十进字字符
 static int is_ascii_dec(unsigned char data)
 {
@@ -44,6 +46,7 @@ int comm_base::hex_to_hexstring(char hexdata[],unsigned int hexsize,char buff[],
 
     return cnt;
 }
+
 //十六进制字符串转换为十六进制数
 int comm_base::hexstring_to_hex(char hexstring[],unsigned int hexsize,char buff[],unsigned int buffsize)
 {
